@@ -12,12 +12,12 @@
         
         <!-- Header -->
     <header>
-        <img src="pleasework.webp">
+        <img src="Images/skippers!.jpg" alt="Skipper's Logo">
         <h1>Skipper's & Top Deck</h1>
         <p> Meet me at Skips</p>
     </header>
 
-    <p id="greeting"> </p>   
+    <h1 id="greeting"></h1>
 
  <div id="popupBackground"> </div>
     <div id="popup"> 
@@ -34,13 +34,11 @@
         </ul>
     </nav>
 
-    <script> let greeting = new Date () .getHours () < 18 ?"Welcome to Skippers" : "Welcome to Skippers Late Night";
-        document.getElementById ("greeting")
-    .innerText = greeting;
-
-
+    <script>
+        let greeting = new Date().getHours() < 18 ? "Welcome to Skippers" : "Welcome to Skippers Late Night";
+        document.getElementById("greeting").innerText = greeting;
     
-    const specials = {
+const specials = {
         0: "No Special Sunday!",
         1:  "Today's Special:  Burger Day!",
         2: "Today's Special:  Gyro Day!",
@@ -61,7 +59,7 @@
         document.getElementById ("popupBackground").style.display  = "none";
     }
     window.onload = showPopup;
-        </script>
+</script>
 
 
 <!-- Photo Section -->
@@ -109,4 +107,5 @@
             </tbody>
         </table>
     </section>
+   
    
